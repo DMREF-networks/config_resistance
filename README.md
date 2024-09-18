@@ -11,7 +11,9 @@ Main script to use the generated point clouds and compute the effective resistan
 
   **find_corners_adjacency_B** - finds the NW node and makes this node 1, the SE node and makes this node N, then connects nodes based on the Delaunay triangulation.  
 
-  **compute_voltage_Adj** - defines resistance as the Euclidean distance between connected nodes and applied a current across the network from node 1 to node N
+  **compute_voltage_Adj** - defines resistance as the Euclidean distance between connected nodes and applies a current across the network from node 1 to node N
+
+Within, can define parameters for comparison to experimental results:
 
   xarea: the cross sectional area of one beam of the network in cm^2
 
