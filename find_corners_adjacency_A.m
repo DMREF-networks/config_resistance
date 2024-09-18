@@ -1,6 +1,6 @@
 function [x,y,Amatrix] = find_corners_adjacency_A(x,y,crs)
 % ensures node 1 is NE corner and node n is SW corner
-% this is experimental "configuration A"
+% this is experimental "orientation A" application of current
 % Voronoi in bounded box to create adjacency matrix
 
 n = numel(x);   % number of points
