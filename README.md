@@ -1,6 +1,8 @@
 # config_resistance
 Will be public repository that computes effective resistance from the weighted graph Laplacian
 
+This code is written to run on the data files generated from the code in the config_generate repository
+
 # Lloyd_and_resistance_parfor_v2.m
 
 Main script to use the generated point clouds and compute the effective resistance (and voltage at each node, current at each edge).
