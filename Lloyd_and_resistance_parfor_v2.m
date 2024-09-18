@@ -33,8 +33,11 @@ for kn = 1:length(Iter)
         y = y_loc{k,Iter(kn)+1};
 
         tic
-        [x,y,Amatrix] = find_corners_adjacency_B(x,y,crs);
+        [x,y,Amatrix] = find_corners_adjacency_A(x,y,crs);
+        % [x,y,Amatrix] = find_corners_adjacency_B(x,y,crs);
 
+        % within this function is the ability to change resistance of network edge beams 
+        % based on dimensions of the beams and resistivity of the material
         [R_tmp(k,1), V_vars_tmp{k,1}, I_vars_tmp{k,1}] = compute_voltage_Adj(x,y,Amatrix);
         toc
       
