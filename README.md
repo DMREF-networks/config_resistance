@@ -20,3 +20,7 @@ Within, can define parameters for comparison to experimental results:
   tmp: the resistance of each beam of the network in mOhm
 
   Returns the effective resistance across the entire network, as well as the voltage at each node and the current across each edge
+
+
+Inspiration for the algorithm to create the network Adjacency matrix was taken from 
+from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
