@@ -11,6 +11,9 @@ Main script to use the generated point clouds and compute the effective resistan
 
   **find_corners_adjacency_B** - finds the NW node and makes this node 1, the SE node and makes this node N, then connects nodes based on the Delaunay triangulation.  
 
+Inspiration for the algorithm to create the network Adjacency matrix was taken from 
+from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
+
   **compute_voltage_Adj** - defines resistance as the Euclidean distance between connected nodes and applies a current across the network from node 1 to node N
 
 Within, can define parameters for comparison to experimental results:
@@ -22,5 +25,4 @@ Within, can define parameters for comparison to experimental results:
   Returns the effective resistance across the entire network, as well as the voltage at each node and the current across each edge
 
 
-Inspiration for the algorithm to create the network Adjacency matrix was taken from 
-from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
+
