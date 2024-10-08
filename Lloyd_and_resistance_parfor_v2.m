@@ -3,17 +3,17 @@
 % parpool(c);
 
 % load in point clouds generated with Lloyd_create_pointclouds_parfor.m
+% point cloud point locations should be in the form
 % x_loc{simulation number, Lloyds iteration number+1}; y_loc{simulation number, Lloyds iteration number+1};
 load filename.mat
 
-% --- these parameters are defined in the saved data file
+% --- these parameters are defined in the saved data file, or can be defined here
 % n_sims = 1;
 % n_node = 200;
 % crs = [0 0; 0 2000; 2000 2000; 2000 0]; % box to contain points
 
 % Here, which iterations to compute resistance at can be defined, if not already in filename.mat
 % Iter = [0 round(logspace(0,2,8))];
-% Iter = [0 1];
 % Iter = [0:100];
 numIterations = max(Iter);
 % ---
