@@ -5,7 +5,7 @@ function [x,y,Amatrix] = find_corners_adjacency_B(x,y,crs)
 
 n = numel(x);   % number of points
 
-% --- find NW and SE corners:  this should be 'configuration B'
+% --- find NW and SE corners:  this is orientation B
 d2 = (x-0).^2 + (y-2000).^2;
 [~,ind_v1] = min(d2);
 
