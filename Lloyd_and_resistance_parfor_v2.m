@@ -3,9 +3,10 @@
 % parpool(c);
 
 % load in point clouds generated with Lloyd_create_pointclouds_parfor.m
+% x_loc{simulation number, Lloyds iteration number+1}; y_loc{simulation number, Lloyds iteration number+1};
 load filename.mat
 
-% --- these are defined in the saved data file
+% --- these parameters are defined in the saved data file
 % n_sims = 1;
 % n_node = 200;
 % crs = [0 0; 0 2000; 2000 2000; 2000 0]; % box to contain points
