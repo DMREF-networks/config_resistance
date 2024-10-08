@@ -5,7 +5,7 @@ function [x,y,Amatrix] = find_corners_adjacency_A(x,y,crs)
 
 n = numel(x);   % number of points
 
-% --- find NE and SW corners:  this should be 'configuration A'
+% --- find NE and SW corners:  this is orientation A
 d2 = (x-2000).^2 + (y-2000).^2;
 [~,ind_v1] = min(d2);
 
@@ -20,7 +20,7 @@ y = [y([1:ind_v2-1 ind_v2+1:end]); y(ind_v2)];
 
 % ADD-IN to calculate adjacency matrix via voronoi nearest neighbors
 % from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
-% re-written by Newhall to fix issue that sometimes leaves a node disconnected
+% re-written by Newhall to fix the issue that sometimes misses edges
 
 rgx = max(crs(:,1))-min(crs(:,1));
 rgy = max(crs(:,2))-min(crs(:,2));
