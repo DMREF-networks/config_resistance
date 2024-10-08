@@ -1,7 +1,7 @@
 # config_resistance
-Will be public repository that computes effective resistance from the weighted graph Laplacian
+Given a set of (x,y) coordinates of a point cloud in 2D, this code creates a network metamaterial by connection points via the Delaunay triangulation in a bounding box.  It then computes the effective resistance across either diagonal of the material, as well as the option to return the voltage at each node and the current flow along each edge.
 
-This code is written to run on the data files generated from the code in the config_generate repository
+This code is written to run on the data files generated from the code in the config_generate repository.
 
 # Lloyd_and_resistance_parfor_v2.m
 
@@ -14,15 +14,9 @@ Main script to use the generated point clouds and compute the effective resistan
 Inspiration for the algorithm to create the network Adjacency matrix was taken from 
 from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
 
-  **compute_voltage_Adj** - defines resistance as the Euclidean distance between connected nodes and applies a current across the network from node 1 to node N
+  **compute_voltage_Adj** - computes the weighted adjacency matrix and computes effective resistance, voltages, and currents.  Defines resistance as the Euclidean distance between connected nodes and applies a current across the network from node 1 to node N.  Within, can define parameters for comparison to experimental results:
 
-Within, can define parameters for comparison to experimental results:
-
-  xarea: the cross sectional area of one beam of the network in cm^2
+  xarea: the cross-sectional area of one beam of the network in cm^2
 
   tmp: the resistance of each beam of the network in mOhm
-
-  Returns the effective resistance across the entire network, as well as the voltage at each node and the current across each edge
-
-
 
