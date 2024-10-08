@@ -20,7 +20,7 @@ y = [y([1:ind_v2-1 ind_v2+1:end]); y(ind_v2)];
 
 % ADD-IN to calculate adjacency matrix via voronoi nearest neighbors
 % from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
-% re-written by Newhall to fix issue that sometimes leaves a node disconnected
+% re-written by Newhall to fix the issue that sometimes misses edges
 
 rgx = max(crs(:,1))-min(crs(:,1));
 rgy = max(crs(:,2))-min(crs(:,2));
