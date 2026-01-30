@@ -20,6 +20,18 @@ from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
 
   tmp: the resistance of each beam of the network in mOhm
 
+# Edge flip test
+
+For a given network, identify two neighboring triangles that form a convex quadrilateral structure with their common edge being one of the two quadrilateral diagonals.  Switch the diagonal for the other diagonal and record the resulting change in effective resistance measured from the NE to SW corners and the change in total effective resistance.  
+
+  **edge_flip_test.m** - takes in the adjacency matrix and performs the edge flip test.
+
+  **isConvex_from_coords.m** - uses the (x,y) coordinates of the nodes in a quadrilateral and determines if it is convex.  
+
+  **compute_Rs.m** - an updated version of `compute_voltage_Adj` that returns the effective resistance between any two nodes, as well as the total effective resistance.
+
+  **draw_flip_heatmap_edges_only.m** - plotting routine to plot the result of the edge_flip_test on the network.  Calls the colormap defined in `purple_cmap.m`.
+
 # License
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
