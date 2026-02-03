@@ -1,7 +1,7 @@
 # config_resistance
 Given a set of (x,y) coordinates of a point cloud in 2D, this code creates a network metamaterial by connection points via the Delaunay triangulation in a bounding box.  It then computes the effective resistance across either diagonal of the material, as well as the option to return the voltage at each node and the current flow along each edge.
 
-This code is written to run on the data files generated from the code in the config_generate repository.
+This code is written to run on the data files generated from the code in the [config_generate repository](https://github.com/DMREF-networks/config_generation).
 
 # Lloyd_and_resistance_parfor_v2.m
 
