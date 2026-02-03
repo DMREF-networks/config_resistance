@@ -44,6 +44,8 @@ This work is licensed under a
 If you use this code, please also cite Obrero et al., (2025) Electrical transport in tunably disordered metamaterials, *Phys. Rev. E* 112, 035505
 https://doi.org/10.1103/6bph-n6zj
 
+If you use the edge flip test code, additionally cite Wang et al., (2026) ArXiv
+
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
