@@ -41,7 +41,9 @@ Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
-[[DOI](https://zenodo.org/badge/858988659.svg)](https://doi.org/10.5281/zenodo.18472235)
+![text](https://zenodo.org/badge/858988659.svg)
+
+[![DOI](https://zenodo.org/badge/858988659.svg)](https://doi.org/10.5281/zenodo.18472235)
 
 If you use this code, please also cite Obrero et al., (2025) Electrical transport in tunably disordered metamaterials, *Phys. Rev. E* 112, 035505
 https://doi.org/10.1103/6bph-n6zj
