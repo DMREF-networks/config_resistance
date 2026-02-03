@@ -40,14 +40,14 @@ end
 nodes = unique( [cell2mat(poly_x) cell2mat(poly_y)] , 'rows' );
 x = nodes(:,1);
 y = nodes(:,2);
-% find NW and SE corners:
-d2 = (x-0).^2 + (y-2000).^2;
+% --- find NE and SW corners:  this is orientation A
+d2 = (x-2000).^2 + (y-2000).^2;
 [~,ind_v1] = min(d2);
 
 x = [x(ind_v1); x([1:ind_v1-1 ind_v1+1:end])];
 y = [y(ind_v1); y([1:ind_v1-1 ind_v1+1:end])];
 
-d2 = (x-2000).^2 + (y-0).^2;
+d2 = (x-0).^2 + (y-0).^2;
 [~,ind_v2] = min(d2);
 
 x = [x([1:ind_v2-1 ind_v2+1:end]); x(ind_v2)];
