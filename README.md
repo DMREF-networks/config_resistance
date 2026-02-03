@@ -20,6 +20,8 @@ from https://people.sc.fsu.edu/~jburkardt/presentations/voronoi_neighbors.pdf
 
   tmp: the resistance of each beam of the network in mOhm
 
+  **find_corners_adjacency_voronoi** - can take the place of `find_corners_adjacency_A` to construct a Voronoi tessellation of the point cloud instead of a Delaunay triangulation.
+
 # Edge flip test
 
 For a given network, identify two neighboring triangles that form a convex quadrilateral structure with their common edge being one of the two quadrilateral diagonals.  Switch the diagonal for the other diagonal and record the resulting change in effective resistance measured from the NE to SW corners and the change in total effective resistance.  
